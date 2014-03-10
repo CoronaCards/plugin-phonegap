@@ -62,20 +62,22 @@ InitFrame( NSDictionary *options, CGRect defaultFrame )
 {
 	CoronaViewController *coronaController = [[[CoronaViewController alloc] init] AUTORELEASE];
 
+	// UUID
+//	NSString *key = [[NSUUID UUID] UUIDString];
+	NSString *key = [self keyForCommand:command];
+	[_coronaControllers setObject:coronaController forKey:key];
+
 	UIViewController *parentController = self.viewController;
 	[parentController addChildViewController:coronaController];
 
 	CoronaView *coronaView = (CoronaView *)coronaController.view;
 
 	// Options
-	NSDictionary *options = [command argumentAtIndex:0];
+	NSDictionary *options = [command argumentAtIndex:1];
 	CGRect frame = InitFrame( options, parentController.view.frame );
 	coronaView.frame = frame;
 
 	[parentController.view addSubview:coronaView];
-
-	NSString *key = [[NSUUID UUID] UUIDString];
-	[_coronaControllers setObject:coronaController forKey:key];
 
 	CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:key];
 	[self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];

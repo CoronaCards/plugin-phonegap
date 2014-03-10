@@ -15,7 +15,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="CoronaView">
-                <param name="ios-package" value="CDVCoronaView"/>
+                <param name="ios-package" value="CDVCoronaViewBridge"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
@@ -23,8 +23,8 @@
         <header-file src="src/ios/CDVCoronaViewBridge.h" />
         <source-file src="src/ios/CDVCoronaViewBridge.mm" />
 
-        <js-module src="www/coronaview.js" name="coronaview">
-            <clobbers target="coronaview" />
+        <js-module src="www/coronaview.js" name="CoronaView">
+            <clobbers target="CoronaView" />
         </js-module>
 
 <!--
