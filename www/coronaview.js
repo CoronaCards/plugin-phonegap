@@ -1,4 +1,5 @@
-cordova.define("com.coronalabs.coronacards.cordova.CoronaView", function(require, exports, module) { var exec = require('cordova/exec');
+
+var exec = require('cordova/exec');
 var utils = require('cordova/utils');
 
 function CoronaView(x,y,w,h) {
@@ -42,4 +43,3 @@ CoronaView.prototype.sendEvent = function(eventParams) {
 
 module.exports = CoronaView
 
-});
