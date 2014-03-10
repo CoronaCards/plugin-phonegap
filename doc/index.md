@@ -29,6 +29,16 @@ This plugin provides the ability to create CoronaView instances from JavaScript.
 
     phonegap local plugin add https://github.com/CoronaCards/plugin-phonegap
 
+## Project Configuration
+
+### iOS/Xcode
+
+On iOS, you will need to add `CoronaKit.framework` to your Xcode project.
+
+In addition, you will need to add required frameworks. 
+
+See [CoronaCards Setup Guide (iOS)](http://docs.coronalabs.com/daily/coronacards/ios/setup.html) for more information.
+
 ### Gotchas
 
 There is a quirk with the command line tool worth noting, relating to how the JavaScript files for the plugin get included.
@@ -45,6 +55,7 @@ For a new project, the command-line sequence would look like:
     phonegap local plugin add https://github.com/CoronaCards/plugin-phonegap
 
 You can consult the [Phonegap docs](http://docs.phonegap.com/en/3.4.0/index.html) for more information.
+
 
 ## Supported Platforms
 
