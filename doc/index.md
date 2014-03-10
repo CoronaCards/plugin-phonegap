@@ -27,7 +27,24 @@ This plugin provides the ability to create CoronaView instances from JavaScript.
 
 ## Installation
 
-    cordova plugin add com.coronalabs.coronacards.cordova
+    phonegap local plugin add https://github.com/CoronaCards/plugin-phonegap
+
+### Gotchas
+
+There is a quirk with the command line tool worth noting, relating to how the JavaScript files for the plugin get included.
+
+The easiest path is to let the command line tool add the JavaScript files to your project for you. However, you must add the platform __before__ you add the plugin. Otherwise, you'll have to manually add the JavaScript files.
+
+You can add a platform by calling `phonegap run ios` which attempts to add, build, and run your project. 
+
+For a new project, the command-line sequence would look like:
+
+    phonegap create HelloWorld
+    cd HelloWorld
+    phonegap run ios
+    phonegap local plugin add https://github.com/CoronaCards/plugin-phonegap
+
+You can consult the [Phonegap docs](http://docs.phonegap.com/en/3.4.0/index.html) for more information.
 
 ## Supported Platforms
 
