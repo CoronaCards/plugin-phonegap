@@ -70,7 +70,7 @@ Loads the `main.lua` in the specific folder and executes it.
 
 ### Parameters
 
-- __path__: A path to a folder containing the Corona resource files (e.g. `main.lua`).
+- __path__: A relative path inside the .app bundle to a folder containing the Corona resource files (e.g. `main.lua`).
 
 - __params__: 
 

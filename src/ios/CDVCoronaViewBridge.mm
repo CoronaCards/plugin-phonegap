@@ -100,11 +100,10 @@ InitFrame( NSDictionary *options, CGRect defaultFrame )
 
 	if ( coronaController )
 	{
-		// NSString *path = [command argumentAtIndex:1];
-		NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Corona"];
+		NSString *path = [command argumentAtIndex:1];
+		path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:path];
 
-		// NSDictionary *params = [command argumentAtIndex:2];
-		NSDictionary *params = nil;
+		NSDictionary *params = [command argumentAtIndex:2];
 
 		CoronaView *coronaView = (CoronaView *)coronaController.view;
 		[coronaView runWithPath:path parameters:params];
