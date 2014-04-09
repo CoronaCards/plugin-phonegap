@@ -31,6 +31,16 @@ This plugin provides the ability to create CoronaView instances from JavaScript.
 
 ## Project Configuration
 
+### Android
+
+On Android, you will need to add the CoronaCards libraries to your Android project.
+
+More specifically, you will need to copy the .jar files into the [Android Project Directory]/libs folder and the .so files into the [Android Project Directory]/libs/armeabi-v7a folder.
+
+You will also need to put your Corona project into the [Android Project Directory]/assets folder.
+
+See [CoronaCards Project Integration (Android)](http://docs.coronalabs.com/daily/coronacards/android/project.html) for more information.
+
 ### iOS/Xcode
 
 On iOS, you will need to add `CoronaKit.framework` to your Xcode project.
@@ -58,6 +68,8 @@ You can consult the [Phonegap docs](http://docs.phonegap.com/en/3.4.0/index.html
 
 
 ## Supported Platforms
+
+- Android
 
 - iOS
 
@@ -100,7 +112,7 @@ Loads the `main.lua` in the specific folder and executes it.
 
 - __path__: A relative path inside the .app bundle to a folder containing the Corona resource files (e.g. `main.lua`).
 
-- __params__: 
+- __params__: Currently not supported on Android.
 
 ### Quick Example
 

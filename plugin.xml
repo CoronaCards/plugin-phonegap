@@ -11,6 +11,19 @@
     <keywords>cordova,phonegap,plugin,Lua,CoronaCards,CoronaView</keywords>
     <repo>https://github.com/CoronaCards/plugin-phonegap.git</repo>
 
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CoronaView">
+                <param name="android-package" value="com.coronalabs.coronacards.cordova.CoronaView"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/CoronaView.java" target-dir="src/com/coronalabs/coronacards/cordova" />
+        
+        <js-module src="www/coronaview.js" name="CoronaView">
+            <clobbers target="CoronaView" />
+        </js-module>
+    </platform>
+
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
