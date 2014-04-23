@@ -28,10 +28,7 @@ This plugin provides the ability to create CoronaView instances from JavaScript.
 
 ## Documentation
 
-* [PhoneGap Plugin Reference/Docs](doc/index.md) includes information on:
-   + Installing the plugin
-   + Configuring your PhoneGap project
-   + JavaScript API reference.
+* [PhoneGap Plugin Reference/Docs](doc/index.md) includes information on installing the plugin, configuring your PhoneGap project, and the JavaScript API.
 
 
 ### Additional information
