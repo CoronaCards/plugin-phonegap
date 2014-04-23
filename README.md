@@ -28,7 +28,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 * [PhoneGap Plugin Docs](doc/index.md) for CoronaCards
 
-### Additional information:
+### Additional information
 
 * [CoronaCards](http://coronacards.com/)
 * [CoronaCards Reference docs](http://coronacards.com/)
