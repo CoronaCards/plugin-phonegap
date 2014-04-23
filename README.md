@@ -28,13 +28,9 @@ This plugin provides the ability to create CoronaView instances from JavaScript.
 
 ## Documentation
 
-* [PhoneGap Plugin Reference/Docs](doc/index.md) includes information on installing the plugin, configuring your PhoneGap project, and the JavaScript API.
-
-
-### Additional information
-
+* [PhoneGap Plugin Reference/Docs](doc/index.md) Installing the plugin, configuring your PhoneGap project, and the JavaScript API.
 * [CoronaCards main site](http://coronacards.com/)
-* [CoronaCards reference (general native app development)](http://docs.coronalabs.com/daily/coronacards/index.html)
+* [CoronaCards reference](http://docs.coronalabs.com/daily/coronacards/index.html) General native app development.
 
 ## Samples
 
