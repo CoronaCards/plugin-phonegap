@@ -24,4 +24,16 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # com.coronalabs.coronacards.cordova
 
-Plugin documentation: [doc/index.md](doc/index.md)
+## Documentation
+
+* [PhoneGap Plugin Docs](doc/index.md) for CoronaCards
+
+Additional information:
+
+* [CoronaCards](http://coronacards.com/)
+* [CoronaCards Reference docs](http://coronacards.com/)
+
+## Samples
+
+* Android: https://github.com/CoronaCards/sample-android-ChildView-Phonegap
+* iOS: https://github.com/CoronaCards/sample-ios-ChildView-Phonegap
